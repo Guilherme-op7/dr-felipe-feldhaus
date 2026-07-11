@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #8b6b4a;
+  --color-accent: #d4a76a;
+  --color-dark: #3a3228;
+  --color-cream: #f9f5f0;
+  --font-sans: 'Montserrat', sans-serif;
+  --font-display: 'Dancing Script', cursive;
+}
+
+body {
+  background-color: #f9f5f0;
+  color: #3a3228;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+.depoimento-card::before {
+  content: '"';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 80px;
+  color: rgba(139, 107, 74, 0.1);
+  font-family: serif;
+  line-height: 1;
+}
+
+@view-transition {
+  navigation: auto;
+}
+
+::view-transition-old(root) {
+  animation: 200ms ease out vt-fade-out;
+}
+
+::view-transition-new(root) {
+  animation: 200ms ease in vt-fade-in;
+}
+
+@keyframes vt-fade-out {
+  to { opacity: 0; }
+}
+
+@keyframes vt-fade-in {
+  from { opacity: 0; }
+}

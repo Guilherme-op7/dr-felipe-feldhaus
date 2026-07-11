@@ -1,0 +1,29 @@
+{
+  "name": "site-felipe-feldhaus",
+  "version": "1.0.0",
+  "description": "Site institucional do Dr. Felipe Feldhaus - Especialista em Harmonização Facial",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.2.4",
+    "@tanstack/react-router": "^1.169.2",
+    "embla-carousel-autoplay": "^8.6.0",
+    "embla-carousel-react": "^8.6.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tailwindcss": "^4.2.4"
+  },
+  "devDependencies": {
+    "@tanstack/router-plugin": "^1.168.19",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^4.3.1",
+    "typescript": "^7.0.2",
+    "vite": "^5.4.2"
+  }
+}
